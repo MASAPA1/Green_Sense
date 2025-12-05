@@ -24,7 +24,7 @@
         <a href="#home">Home</a>
         <a href="#features">Features</a>
         <a href="#how">How It Works</a>
-        <a href="#login">Get Started</a>
+        <a href="#signup">Get Started</a>
         <a href="#contact" class="nav-cta">Contact Us</a>
       </nav>
 
@@ -49,7 +49,7 @@
           <h1 id="hero-heading">Smart insights for small greenhouse farmers</h1>
           <p class="lead">Turn daily purchases and sales into clear recommendations — reduce waste, increase profit, and plan your next season with confidence.</p>
           <div class="hero-ctas">
-            <a class="btn" href="login.html">Get Started</a>
+            <a class="btn" href="#signup">Get Started</a>
             <a class="btn-outline" href="#how">How It Works</a>
           </div>
           <ul class="hero-bullets" aria-hidden="true">
@@ -132,67 +132,124 @@
       </div>
     </section>
 
-    <!-- LOGIN SECTION -->
-    <section id="login" class="section login-section" aria-labelledby="login-heading">
-      <div class="container login-grid">
-        <div class="login-intro">
-          <p class="eyebrow">Login Dashboard</p>
-          <h2 id="login-heading">Your greenhouse metrics, all in one place</h2>
-          <p>Access live profit tracking, expense trends, and growing season forecasts the moment you sign in.</p>
-          <ul class="login-benefits">
-            <li><span aria-hidden="true">&#10003;</span> Quick glance KPIs for every crop</li>
-            <li><span aria-hidden="true">&#10003;</span> Downloadable reports and CSV exports</li>
-            <li><span aria-hidden="true">&#10003;</span> Collaborative access for team members</li>
-          </ul>
-        </div>
-        <div class="login-card" data-auth-card>
-          <div class="auth-panels">
-            <section class="auth-panel login-panel" data-auth-panel="login" aria-label="Login to GreenSense">
-              <form class="auth-form login-form">
-                <label for="loginEmail">Email address</label>
-                <input id="loginEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
-                <label for="loginPassword">Password</label>
-                <input id="loginPassword" name="password" type="password" autocomplete="current-password" placeholder="••••••••" required>
-                <div class="login-actions">
-                  <label class="remember">
-                    <input type="checkbox" name="remember"> Remember me
-                  </label>
-                  <a class="forgot-link" href="#">Forgot password?</a>
-                </div>
-                <button type="submit" class="btn login-submit">Log In</button>
-              </form>
-              <div class="login-footer">
-                <span>No account yet?</span>
-                <button type="button" class="link-button" data-auth-switch="signup">Register</button>
-              </div>
             </section>
 
             <section class="auth-panel signup-panel" data-auth-panel="signup" aria-label="Create your GreenSense account" aria-hidden="true">
               <form class="auth-form signup-form">
-                <label for="signupName">Full name</label>
-                <input id="signupName" name="name" type="text" autocomplete="name" placeholder="Full name" required>
-                <label for="signupEmail">Email address</label>
-                <input id="signupEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
-                <label for="signupPassword">Password</label>
-                <input id="signupPassword" name="password" type="password" autocomplete="new-password" placeholder="Create a password" required>
-                <label for="signupConfirm">Confirm password</label>
-                <input id="signupConfirm" name="confirm" type="password" autocomplete="new-password" placeholder="Repeat password" required>
-                <div class="login-actions signup-actions">
-                  <label class="remember">
-                    <input type="checkbox" name="terms" required> I agree to the Terms &amp; Privacy Policy
-                  </label>
-                </div>
-                <button type="submit" class="btn login-submit">Create Account</button>
-              </form>
-              <div class="login-footer">
-                <span>Already have an account?</span>
-                <button type="button" class="link-button" data-auth-switch="login">Log In</button>
-              </div>
+                <div class="form-row">
+      <div class="form-field">
+        <label for="signupFirstName">Name</label>
+        <input id="signupFirstName" name="firstName" type="text" placeholder="First name" autocomplete="given-name" required>
+      </div>
+      <div class="form-field">
+        <label for="signupSurname">Surname</label>
+        <input id="signupSurname" name="surname" type="text" placeholder="Surname" autocomplete="family-name" required>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <label for="signupEmail">Email address</label>
+      <input id="signupEmail" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+    </div>
+
+    <div class="form-row">
+      <div class="form-field">
+        <label for="signupPassword">Password</label>
+        <input id="signupPassword" name="password" type="password" placeholder="Create a password" autocomplete="new-password" required>
+      </div>
+      <div class="form-field">
+        <label for="signupConfirm">Confirm password</label>
+        <input id="signupConfirm" name="confirm" type="password" placeholder="Repeat password" autocomplete="new-password" required>
+      </div>
+    </div>
+
+    <label class="signup-terms">
+      <input type="checkbox" name="terms" required>
+      I agree to the Terms &amp; Privacy Policy.
+    </label>
+
+    <button type="submit" class="btn login-submit">Sign Up</button>
+  </form>
+
+  <div class="login-footer">
+    <span>Already have an account?</span>
+    <a class="link-button" href="login.html">Log in</a>
+  </div>
             </section>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- SIGN UP SECTION -->
+<section id="signup" class="section signup-section" aria-labelledby="signup-heading">
+  <div class="container signup-grid">
+    <div class="signup-intro">
+      <p class="eyebrow">Sign Up Dashboard</p>
+      <h2 id="signup-heading">Create your GreenSense account in minutes</h2>
+      <p>Build your greenhouse control center while you sign up—guided setup personalizes insights for your crops.</p>
+      <ul class="signup-benefits">
+        <li><span aria-hidden="true">&#10003;</span> Launch with tailored KPIs for every crop</li>
+        <li><span aria-hidden="true">&#10003;</span> Invite teammates during onboarding</li>
+        <li><span aria-hidden="true">&#10003;</span> Import starter templates for expenses and labor</li>
+      </ul>
+    </div>
+
+    <div class="signup-card">
+      <div class="signup-card-head">
+        <h3>Let’s get your greenhouse connected</h3>
+        <p>Answer a few quick questions and we’ll tailor your dashboards instantly.</p>
+      </div>
+
+      <form class="signup-form">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="signupFirstName">First name</label>
+            <input id="signupFirstName" name="firstName" type="text" autocomplete="given-name" placeholder="First name" required>
+          </div>
+          <div class="form-field">
+            <label for="signupSurname">Last name</label>
+            <input id="signupSurname" name="surname" type="text" autocomplete="family-name" placeholder="Last name" required>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="signupEmail">Work email</label>
+          <input id="signupEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="signupPassword">Password</label>
+            <input id="signupPassword" name="password" type="password" autocomplete="new-password" placeholder="Create a password" required>
+          </div>
+          <div class="form-field">
+            <label for="signupConfirm">Confirm password</label>
+            <input id="signupConfirm" name="confirm" type="password" autocomplete="new-password" placeholder="Repeat password" required>
+          </div>
+        </div>
+
+        <label class="signup-terms">
+          <input type="checkbox" name="terms" required>
+          I agree to the Terms &amp; Privacy Policy and consent to receive onboarding resources.
+        </label>
+
+        <button type="submit" class="btn signup-submit">Create my account</button>
+      </form>
+
+      <div class="signup-footer">
+        <span>Already using GreenSense?</span>
+        <a class="link-button" href="login.html">Log in</a>
+      </div>
+
+      <ul class="signup-checklist" aria-label="What happens next">
+        <li><span aria-hidden="true">&#10003;</span> Guided setup for top crops and sales channels</li>
+        <li><span aria-hidden="true">&#10003;</span> Team invites with role-based access</li>
+        <li><span aria-hidden="true">&#10003;</span> Import templates for expenses, supplies, and labor</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
     <!-- CONTACT -->
     <section id="contact" class="contact-section" aria-labelledby="contact-heading">
@@ -206,6 +263,7 @@
         <h3>Ready to Protect Your Farm?</h3>
         <p>Smarter farming begins with early detection.</p>
         <a class="contact-back" href="mailto:support@freshsense.com">Contact Us</a>
+        <a class="contact-back outline" href="#login">Sign In</a>
       </div>
     </section>
   </main>
